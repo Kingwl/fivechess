@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2014-10-03T18:29:55
+# Project created by QtCreator 2014-10-04T21:52:29
 #
 #-------------------------------------------------
 
@@ -9,7 +9,7 @@ QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = fiveChess_client
+TARGET = five_chess_client
 TEMPLATE = app
 
 

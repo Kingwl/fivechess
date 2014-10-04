@@ -1,14 +1,15 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2014-10-03T22:12:25
+# Project created by QtCreator 2014-10-04T18:38:29
 #
 #-------------------------------------------------
 
 QT       += core gui
 QT       += network
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = fivechess_server
+TARGET = five_chess_client
 TEMPLATE = app
 
 
