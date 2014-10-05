@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     resize(640, 480);
     memset(map,0,sizeof(map));
     socket = new QTcpSocket(this);
-    socket -> connectToHost("127.0.0.1", 6000);
+    socket -> connectToHost("1.25.132.156", 6000);
     QObject::connect(socket,SIGNAL(connected()), this, SLOT(sendRequest()));
 }
 MainWindow::~MainWindow()
@@ -197,7 +197,7 @@ int MainWindow::check()
                     }
                 }
                 if(num >= 4) return flag;
-
+                num = 0;
                 for(int x = 1; x < 5; x++)
                 {
                     if(is_in(i + x, j + x) == false) break;
@@ -217,7 +217,7 @@ int MainWindow::check()
                     }
                 }
                 if(num >= 4)    return flag;
-
+                num = 0;
                 for(int x = 1; x < 5; x++)
                 {
                     if(is_in(i + x, j - x) == false) break;

@@ -219,7 +219,7 @@ int MainWindow::check()
                     }
                 }
                 if(num >= 4) return flag;
-
+                num = 0;
                 for(int x = 1; x < 5; x++)
                 {
                     if(is_in(i + x, j + x) == false) break;
@@ -239,7 +239,7 @@ int MainWindow::check()
                     }
                 }
                 if(num >= 4)    return flag;
-
+                num = 0;
                 for(int x = 1; x < 5; x++)
                 {
                     if(is_in(i + x, j - x) == false) break;
